@@ -1,0 +1,110 @@
+/* font family */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Yeseva+One&display=swap");
+
+.font-yesevaone {
+  font-family: "Yeseva One", serif;
+}
+.font-popins {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* share style */
+.flex {
+  display: flex;
+}
+.heading {
+  font-size: 48px;
+  font-weight: bold;
+  color: #000000;
+}
+.secondary-heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: 333333;
+}
+.heading-description {
+  font-size: 18px;
+  font-weight: 400;
+  color: #3e3e3e;
+  margin-top: 16px;
+  margin-bottom: 18px;
+}
+.secondary-description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #434343;
+  margin-top: 20px;
+}
+.btn {
+  font-size: 1rem;
+  font-weight: 500;
+  width: fit-content;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff5959;
+}
+
+/*  banner */
+.banner {
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+.banner-contant {
+}
+.banner img {
+  width: 40%;
+}
+
+.banner-heading {
+  font-size: 60px;
+  font-weight: 400px;
+  border-left: 4px solid #ff5959;
+  padding-left: 13px;
+  width: 550px;
+}
+.banner-heading span {
+  color: #ffad5a;
+}
+.banner-description {
+  width: 400px;
+  margin-top: 16px;
+  margin-bottom: 18px;
+}
+
+/* media quary */
+@media screen and (max-width: 576px) {
+  .banner {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .banner-contant {
+  }
+  .banner img {
+    display: none;
+  }
+  .banner-heading {
+    font-size: 30px;
+    width: 100%;
+  }
+  .banner-description {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 993px) {
+  .banner {
+    padding: 20px;
+  }
+  .banner-heading {
+    font-size: 40px;
+    width: 100%;
+  }
+}
