@@ -53,9 +53,14 @@
 }
 
 /*  banner */
+header {
+  max-width: 1200px;
+  margin: auto;
+}
 .banner {
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+
   margin: 50px auto;
 }
 .banner-contant {
@@ -80,11 +85,50 @@
   margin-bottom: 18px;
 }
 
+/* mission */
+.my-mission {
+  max-width: 1200px;
+  margin: 100px auto;
+  text-align: center;
+}
+.my-mission span {
+  color: #ffad5a;
+}
+.mission-card-container {
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.card {
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+  margin-top: 50px;
+}
+.card img {
+  width: 141px;
+}
+#card-1 {
+  background-color: rgba(79, 157, 166, 0.1);
+}
+#card-2 {
+  background-color: rgba(255, 89, 89, 0.1);
+}
+#card-3 {
+  background-color: rgba(255, 244, 214, 1);
+}
+.card-heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+}
+
 /* media quary */
 @media screen and (max-width: 576px) {
-  .banner {
+  .banner,
+  .mission-card-container {
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
   }
   .banner-contant {
   }
@@ -97,6 +141,10 @@
   }
   .banner-description {
     width: 100%;
+  }
+  /* mission */
+  .heading {
+    font-size: 38px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 993px) {
