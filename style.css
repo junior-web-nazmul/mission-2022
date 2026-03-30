@@ -122,11 +122,32 @@ header {
   font-weight: 600;
   color: #000000;
 }
+/* develop */
+.develop-projects {
+  max-width: 1200px;
+  margin: auto;
+}
+.develop-container,
+.comunity-projects {
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  margin-bottom: 100px;
+}
+.develop-container img {
+  width: 50%;
+}
 
+/* community projects */
+.comunity-projects img {
+  width: 50%;
+}
 /* media quary */
 @media screen and (max-width: 576px) {
   .banner,
-  .mission-card-container {
+  .mission-card-container,
+  .develop-container,
+  .comunity-projects {
     flex-direction: column;
     padding: 20px 20px 0 20px;
   }
@@ -146,9 +167,19 @@ header {
   .heading {
     font-size: 38px;
   }
+  /* develop and community */
+
+  .comunity-projects img {
+    width: 100%;
+  }
+  .develop-container img {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 993px) {
-  .banner {
+  .banner,
+  .develop-container,
+  .comunity-projects {
     padding: 20px;
   }
   .banner-heading {
