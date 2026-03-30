@@ -50,6 +50,15 @@
   border: none;
   border-radius: 5px;
   background-color: #ff5959;
+  transition: transform 1s;
+}
+.btn:hover {
+  transform: scale(1.09);
+  cursor: pointer;
+}
+section {
+  max-width: 1200px;
+  margin: auto;
 }
 
 /*  banner */
@@ -123,6 +132,9 @@ header {
   color: #000000;
 }
 /* develop */
+.develop-bg {
+  position: absolute;
+}
 .develop-projects {
   max-width: 1200px;
   margin: auto;
@@ -134,20 +146,90 @@ header {
   gap: 70px;
   margin-bottom: 100px;
 }
-.develop-container img {
-  width: 50%;
+.develop-left {
+  position: relative;
+  z-index: 1;
+}
+.develop-left img {
+  width: 100%;
+}
+.develop-bg {
+  position: absolute;
+  width: 200px;
+  top: 30px;
+  left: -90px;
+  z-index: -1;
 }
 
 /* community projects */
-.comunity-projects img {
+.community-right {
+  position: relative;
+}
+.community-right img {
+  width: 100%;
+}
+.community-bg {
+  width: 200px;
+  position: absolute;
+  bottom: -74px;
+  right: -94px;
+  z-index: -1;
+}
+/* corona */
+.corona-section h2 {
+  text-align: center;
+}
+.corona-section span {
+  color: #ffad5a;
+}
+.corona-contant {
+  justify-content: space-between;
+  align-items: center;
+  gap: 160px;
+}
+.corona-left {
   width: 50%;
+}
+.corona-left img {
+  width: 100%;
+  height: 540px;
+  object-fit: contain;
+}
+/* conoro right */
+.corona-right {
+  width: 600px;
+}
+
+/* footer */
+footer {
+  background-color: black;
+  margin-top: 50px;
+}
+.footer-contant {
+  text-align: center;
+  padding: 40px 0;
+}
+.footer-contant span {
+  color: #ff5959;
+}
+.footer-heading {
+  font-size: 36px;
+  font-weight: 400;
+  color: white;
+}
+.footer-description {
+  font-size: 14px;
+  font-weight: 400;
+  color: #d9dbe1;
+  margin-top: 24px;
 }
 /* media quary */
 @media screen and (max-width: 576px) {
   .banner,
   .mission-card-container,
   .develop-container,
-  .comunity-projects {
+  .comunity-projects,
+  .corona-contant {
     flex-direction: column;
     padding: 20px 20px 0 20px;
   }
@@ -175,6 +257,19 @@ header {
   .develop-container img {
     width: 100%;
   }
+  .develop-bg {
+    display: none;
+  }
+  .community-bg {
+    display: none;
+  }
+  /* corona */
+  .corona-left {
+    width: 100%;
+  }
+  .corona-right {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 993px) {
   .banner,
@@ -185,5 +280,12 @@ header {
   .banner-heading {
     font-size: 40px;
     width: 100%;
+  }
+  /* develop */
+  .develop-bg {
+    display: none;
+  }
+  .community-bg {
+    display: none;
   }
 }
